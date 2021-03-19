@@ -1,0 +1,79 @@
+﻿
+@{
+    ViewData["Title"] = "Viewer";
+}
+
+<h2>@ViewBag.urn_filename</h2>
+
+<div class="row">
+    <div class="col-11 viewer" id="viewer"></div>
+</div>
+
+
+@section Styles{
+    <link rel="stylesheet" href="https://developer.api.autodesk.com/modelderivative/v2/viewers/7.*/style.min.css" type="text/css">
+    <style>
+        .viewer {
+            height: calc(100vh - 227px);
+        }
+    </style>
+}
+
+@section scripts
+    {
+    <script src="https://developer.api.autodesk.com/modelderivative/v2/viewers/7.*/viewer3D.min.js"></script>
+    <script type="text/javascript">
+        var api_url = '/Home';
+        //var api_url = '/BIMHub/api/Home';
+        var viewer; //Forge Viewer
+
+        $(document).ready(function () {
+            launchViewer();
+        })
+
+        var options = {
+            env: 'AutodeskProduction',
+            api: 'derivativeV2',  // for models uploaded to EMEA change this option to 'derivativeV2_EU'
+            getAccessToken: getForgeToken
+        };
+
+        function getForgeToken(callback) {
+            $.ajax({
+                url: api_url + '/gettoken',
+                success: function (res) {
+                    //console.log(res.access_token);
+                    callback(res.access_token, res.expires_in);
+                },
+                error: function () {
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'getForgeToken，請聯繫 萬鼎BIM中心-王韋翔工程師'
+                    });
+                }
+            });
+        }
+
+        function launchViewer() {
+            var documentId = 'urn:dXJuOmFkc2sub2JqZWN0czpvcy5vYmplY3Q6cmVpX29ubGluZS8yMDE5MDYxN18lRTQlQjglQUQlRTklQkMlOEUlRTklOUIlODYlRTUlOUMlOTglRTclQUMlQUMlRTQlQkElOEMlRTclQjglQkQlRTklODMlQTglRTUlQTQlQTclRTYlQTglOTMlRTYlOTYlQjAlRTUlQkIlQkElRTUlQjclQTUlRTclQTglOEJfJUU2JTk1JUI0JUU1JTkwJTg4Lm53ZA==';
+            Autodesk.Viewing.Initializer(options, function () {
+                var htmlDiv = document.getElementById('viewer');
+                viewer = new Autodesk.Viewing.GuiViewer3D(htmlDiv, {});
+                var startedCode = viewer.start();
+                if (startedCode > 0) {
+                    alert('Failed to create a Viewer: WebGL not supported.');
+                    return;
+                }
+                console.log('Initialization complete, loading a model next...');
+                Autodesk.Viewing.Document.load(documentId, onDocumentLoadSuccess, onDocumentLoadFailure);
+            });
+        }
+
+        function onDocumentLoadSuccess(viewerDocument) {
+            var defaultModel = viewerDocument.getRoot().getDefaultGeometry();
+            viewer.loadDocumentNode(viewerDocument, defaultModel);
+        }
+        function onDocumentLoadFailure(viewerErrorCode) {
+            alert('onDocumentLoadFailure() - errorCode:' + viewerErrorCode);
+        }
+    </script>
+}

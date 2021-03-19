@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="BIMHubNoDB31" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^D:\\RESI\\03-Sample\\DotnetCore\\BIMHub_NoDB_31\\BIMHub_NoDB_31\\obj\\Release\\netcoreapp3\.1\\PubTmp\\Out\\$" />
+  </parameter>
+</parameters>

@@ -7,7 +7,7 @@ namespace BIMHub_NoDB_31.Models
 {
     public class Token
     {
-        public string id { get; set; }
+        public string id1 { get; set; }
         public string access_token { get; set; }
         public string expires_in { get; set; }
     }

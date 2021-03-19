@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "x1RtehADCFbkdiUIFV/xWnDa06d3S7WRAX4ZqdoaTW79RJJ99fTk5mvg4Cy7jK69jsSQcYO9rSJ9pXM9bjhrxQ==",
+  "dgSpecHash": "R/9jhQ6fVAPTVkqEGwQrsSS6DbPJTtTv3E9r7x2dEmWSsS9BC8x0G+FDCmwUULylta5KNsY3xwQVIWD1qyhc3w==",
   "success": true,
-  "projectFilePath": "D:\\RESI\\03-Sample\\DotnetCore\\BIMHub_NoDB_31\\BIMHub_NoDB_31\\BIMHub_NoDB_31.csproj",
+  "projectFilePath": "C:\\Users\\user\\source\\repos\\sharetest\\BIMHub_NoDB_31\\BIMHub_NoDB_31.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\09264\\.nuget\\packages\\autodesk.forge\\1.9.0\\autodesk.forge.1.9.0.nupkg.sha512",
-    "C:\\Users\\09264\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
-    "C:\\Users\\09264\\.nuget\\packages\\restsharp\\106.11.7\\restsharp.106.11.7.nupkg.sha512"
+    "C:\\Users\\user\\.nuget\\packages\\autodesk.forge\\1.9.0\\autodesk.forge.1.9.0.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\restsharp\\106.11.7\\restsharp.106.11.7.nupkg.sha512"
   ],
   "logs": []
 }

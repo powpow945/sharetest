@@ -105,26 +105,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\09264\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Users\\user\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\RESI\\03-Sample\\DotnetCore\\BIMHub_NoDB_31\\BIMHub_NoDB_31\\BIMHub_NoDB_31.csproj",
+      "projectUniqueName": "C:\\Users\\user\\source\\repos\\sharetest\\BIMHub_NoDB_31\\BIMHub_NoDB_31.csproj",
       "projectName": "BIMHub_NoDB_31",
-      "projectPath": "D:\\RESI\\03-Sample\\DotnetCore\\BIMHub_NoDB_31\\BIMHub_NoDB_31\\BIMHub_NoDB_31.csproj",
-      "packagesPath": "C:\\Users\\09264\\.nuget\\packages\\",
-      "outputPath": "D:\\RESI\\03-Sample\\DotnetCore\\BIMHub_NoDB_31\\BIMHub_NoDB_31\\obj\\",
+      "projectPath": "C:\\Users\\user\\source\\repos\\sharetest\\BIMHub_NoDB_31\\BIMHub_NoDB_31.csproj",
+      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\user\\source\\repos\\sharetest\\BIMHub_NoDB_31\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\09264\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
